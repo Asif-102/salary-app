@@ -1,5 +1,3 @@
-
-
 function initializeChart(data){
   var chartData = formatChartData(data);
   drawChart(chartData);

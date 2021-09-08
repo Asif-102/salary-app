@@ -51,14 +51,13 @@ var drawChart = function drawChart (data) {
 
 
 //save new item
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", () => {
   initializeChart(salary_data);
-
-
-  $('#addRecord').click(addRecordHandler);
-
-  var btnShowLast = document.getElementById("showLast");
-  btnShowLast.addEventListener("click", function showLastHandler (e) {
+  document
+    .getElementById("addRecord")
+    .addEventListener("click", addRecordHandler);
+  const btnShowLast = document.getElementById("showLast");
+  btnShowLast.addEventListener("click", function showLastHandler(e) {
     showLastItem();
   });
 

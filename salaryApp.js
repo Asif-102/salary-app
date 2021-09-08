@@ -94,8 +94,8 @@ var initialCountListener = function () {
 
 function addRecordHandler() {
     
-    var name = $('#name').val();
-    var salary = $('#salary').val();
+    const name = document.getElementById('name').value;
+    const salary = document.getElementById('salary').value;
     
     if(!name || !salary){
       showDataError(name, salary);
